@@ -1,0 +1,10 @@
+{{page-title 'Index'}}
+
+<NewIdeaForm />
+
+{{#each this.model as |idea|}}
+  <div>
+    <h3>{{idea.summary}}</h3>
+    <p>{{idea.quote}}</p>
+  </div>
+{{/each}}

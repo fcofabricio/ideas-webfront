@@ -1,0 +1,13 @@
+<form {{on 'submit' this.saveIdea}}>
+  <div>
+    <label for='idea-summary'>Summary:</label>
+    <Textarea id='idea-summary' @value={{this.summary}} rows='6' cols='80' />
+  </div>
+  <div>
+    <label for='idea-quote'>Quote:</label>
+    <Textarea id='idea-quote' @value={{this.quote}} rows='6' cols='80' />
+  </div>
+  <div>
+    <button type='submit'>Save</button>
+  </div>
+</form>
